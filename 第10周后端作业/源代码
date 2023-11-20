@@ -18,7 +18,7 @@ if ($conn->connect_error) {
 echo "连接成功";
 
 // 使用 sql 语句创建表单（已执行）
-/*$sql = "CREATE TABLE TAB1120A (
+$sql = "CREATE TABLE TAB1120A (
 id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY, 
 firstname VARCHAR(30) NOT NULL,
 lastname VARCHAR(30) NOT NULL,
@@ -94,7 +94,7 @@ if ($conn->query($sql) === TRUE) {
 } else {
     echo "Error: " . $sql . "<br>" . $conn->error;
 }
-*/
+
 
 $conn->close();
 ?>
